@@ -39,8 +39,16 @@
   justify-content: center;
 }
 .d-flex-row {
-  display: flex;
-  flex-direction: row;
+  // desktop
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+  }
+  // desktop xl
+  @media (min-width: 1440px) {
+    width: 1242px;
+    justify-content: space-between;
+  }
 }
 
 
