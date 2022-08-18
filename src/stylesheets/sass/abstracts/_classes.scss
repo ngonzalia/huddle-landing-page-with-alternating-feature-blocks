@@ -1,0 +1,138 @@
+// typhography
+.open-sans {
+  font-family: 'Open Sans';
+}
+.poppins {
+  font-family: 'Poppins';
+}
+.w-700 {
+  font-weight: 700;
+}
+.w-600 {
+  font-weight: 600;
+}
+.w-400 {
+  font-weight: 400;
+}
+// position
+.center {
+  text-align: center !important;
+}
+.center-t {
+  text-align: center !important;
+}
+.start {
+  text-align: start;
+  // desktop for the main content
+  @media (min-width: 1024px) {
+    text-align: start !important;
+  }
+}
+.start-t {
+  @media (min-width: 768px) {
+    text-align: start !important;
+  }
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+
+// main text
+.main-title {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  // tablet
+  @media (min-width: 768px) {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+}
+.main-text {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  // tablet
+  @media (min-width: 768px) {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+}
+
+// buttons text
+.nav__btn-text {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  // tablet
+  @media (min-width: 768px) {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+  }
+}
+.main__btn-text {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  // tablet
+  @media (min-width: 768px) {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+  }
+}
+.footer__btn-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  // tablet
+  @media (min-width: 768px) {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+// cards text
+.card-title {
+  font-size: 2rem;
+  line-height: 3rem;
+  // desktop 
+  @media (min-width: 1024px) {
+    font-size: 2.8rem;
+    line-height: 4.2rem;
+  }
+}
+.card-text {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  // desktop 
+  @media (min-width: 1024px) {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+}
+.footer__card-text {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  // tablet
+  @media (min-width: 768px) {
+    font-size: 3.2rem;
+    line-height: 6rem;
+  }
+}
+
+// footer text
+.footer-text {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+.copyright-text {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  // tablet
+  @media (min-width: 768px) {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+}

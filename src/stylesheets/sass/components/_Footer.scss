@@ -1,0 +1,206 @@
+.footer {
+  position: relative;
+
+  &__card {
+    background: #fff;
+    width: 352px;
+    height: 176px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
+    border-radius: 15px;
+    position: absolute;
+    top: -109px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    // tablet
+    @media (min-width: 768px) {
+      width: 600px;
+      height: 280px;
+      gap: 32px;
+      top: -184px;
+    }
+    // tablet
+    @media (min-width: 768px) {
+      width: 800px;
+      top: -184px;
+    }
+    
+    &__btn {
+      width: 200px;
+      height: 40px;
+      background-color: #ff52c1;
+      box-shadow: 0px 3px 7px rgba(0, 37, 46, 0.223053);
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      // tablet
+      @media (min-width: 768px) {
+        width: 400px;
+        height: 80px;
+        box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
+        border-radius: 40px;
+      }
+      &:hover {
+        background: #ff9adb;
+        transition: .4s;
+      }
+    }
+  }
+
+
+  &__content {
+    background: #00252e;
+    padding: 139px 21px 46px 16px;
+    // desktop
+    @media (min-width: 1024px) {
+      padding: 144px 78px 64px 120px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+  &__img-container {
+    // tablet
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    // desktop
+    @media (min-width: 768px) {
+      width: 100%;
+      justify-content: start;
+    }
+  }
+  &__img {
+    width: 167px;
+    // desktop
+    @media (min-width: 1024px) {
+      width: 152px;
+    }
+  }
+  &__info {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    // tablet
+    @media (min-width: 768px) {
+      align-items: center;
+      justify-content: center;
+    }
+    // desktop
+    @media (min-width: 1024px) {
+      margin-top: 0;
+      justify-content: space-between;
+      height: 154px;
+    }
+    
+    &--container {
+      width: 338px;
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      // desktop xl
+      @media (min-width: 1440px) {
+        width: 379px;
+        height: 154px;
+      }
+      .container-img {
+        margin-top: 4px;
+      }
+    }
+  }
+  &__links {
+    margin-top: 41px;
+    width: 82px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    // tablet
+    @media (min-width: 768px) {
+      width: 400px;
+      margin: 41px auto 0 auto;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    // desktop
+    @media (min-width: 1024px) {
+      margin-top: 0;
+      flex-direction: column;
+    }
+    // desktop xl
+    @media (min-width: 1440px) {
+      width: 296px;
+      height: 105px;
+      flex-wrap: wrap;
+      align-items: start;
+    }
+    &--link {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__social {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    // desktop
+    @media (min-width: 1024px) {
+      margin-top: 0;
+      justify-content: space-between;
+    }
+    // desktop xl
+    @media (min-width: 1440px) {
+      height: 156px;
+      align-items: flex-start;
+    }
+  }
+  &__social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    .container {
+      width: 32px;
+      height: 31px;
+      border: 0.918357px solid #dfe4f0;
+      border-radius: 50%;
+      cursor: pointer;
+      &:hover {
+        border: 0.918357px solid #ff52c1;
+        transform: scale(1.1);
+        transition: .4s;
+        .fb,
+        .tw,
+        .ig {
+          filter: invert(55%) sepia(42%) saturate(5009%) hue-rotate(294deg) brightness(102%) contrast(101%);
+          transform: scale(1.1);
+          transition: .4s;
+        }
+      }
+    }
+    .fb {
+      width: 7px;
+      height: 15px;
+    }
+    .tw {
+      width: 14px;
+      height: 11px;
+    }
+    .ig {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

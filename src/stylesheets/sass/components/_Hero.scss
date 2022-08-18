@@ -1,0 +1,115 @@
+.hero {
+  background: url(../assets/bg-hero-mobile.svg);
+  background-color: #edfbff;
+  @media (min-width: 1024px) {
+    background: url(../assets/bg-hero-desktop.svg);
+    background-color: #edfbff;
+    max-height: 721px;
+  }
+}
+
+.main {
+  margin: 80px auto 0 auto;
+  width: 304px;
+  // tablet
+  @media (min-width: 768px) {
+    width: 600px;
+  }
+  // desktop
+  @media (min-width: 1024px) {
+    margin-top: 71px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 54px;
+  }
+  // desktop xl
+  @media (min-width: 1440px) {
+    width: 1270px;
+  }
+
+  &__content {
+    // desktop
+    @media (min-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+      height: 321px;
+      margin-top: -70px;
+    }
+    // desktop xl
+    @media (min-width: 1440px) {
+      gap: 32px;
+      height: 321px;
+      margin-top: -30px;
+    }
+  }
+
+  p {
+    margin-top: 24px;
+    // desktop
+    @media (min-width: 1024px) {
+      margin-top: 0;
+    }
+  }
+
+  &__btn-container {
+    margin: 32px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // desktop
+    @media (min-width: 1024px) {
+      margin: 0;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+  &__btn {
+    width: 240px;
+    height: 40px;
+    background: #ff52c1;
+    box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.166185);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background: #ff9adb;
+      transition: .4s;
+    }
+    // tablet
+    @media (min-width: 768px) {
+      height: 56px;
+      border-radius: 28px;
+    }
+    // desktop
+    @media (min-width: 1024px) {
+      width: 280px;
+    }
+  }
+
+  &__img-container {
+    margin: 56px auto 0 auto;
+    padding-bottom: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // desktop
+    @media (min-width: 1024px) {
+      margin: 0 auto;
+    }
+  }
+  &__img {
+    width: 296px;
+    // tablet
+    @media (min-width: 768px) {
+      width: 400px;
+    }
+    // desktop xl
+    @media (min-width: 1440px) {
+      width: 680px;
+    }
+  }
+}

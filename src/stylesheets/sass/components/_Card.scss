@@ -1,0 +1,140 @@
+.cards {
+  margin: 59px 0 229px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  // destop
+  @media (min-width: 1024px) {
+    margin: 160px 0 334px 0;
+  }
+}
+
+.card {
+  width: 335px;
+  height: 488px;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 39px 0 40px;
+  // tablet
+  @media (min-width: 768px) {
+    width: 600px;
+    height: 300px;
+    flex-direction: row-reverse;
+    gap: 50px;
+    align-items: center;
+    padding: 0 40px;
+  }
+  // desktop
+  @media (min-width: 1024px) {
+    width: 900px;
+    height: 440px;
+    gap: 100px;
+    padding: 0;
+  }
+  // desktop xl
+  @media (min-width: 1440px) {
+    width: 1232px;
+    height: 440px;
+    padding: 0;
+    gap: 0;
+  }
+
+  &--grow-together,
+  &--your-users {
+    // desktop
+    @media (min-width: 1024px) {
+      padding: 0 16px 0 120px;
+    }
+  }
+  &--grow-together {
+    // desktop xl
+    @media (min-width: 1440px) {
+      gap: 168px;
+    } 
+  }
+  &--your-users {
+    // desktop xl
+    @media (min-width: 1440px) {
+      gap: 179px;
+    } 
+  }
+  &--flowing-conversations {
+    // tablet
+    @media (min-width: 768px) {
+      flex-direction: row !important;
+    }
+    // desktop
+    @media (min-width: 1024px) {
+      padding: 0 29px 0 109px;
+    }
+    // desktop xl
+    @media (min-width: 1440px) {
+      gap: 155px;
+    } 
+  }
+
+  &__img-container {
+    width: 256px;
+    height: 256px;
+    display: grid;
+    place-content: center;
+    // desktop
+    @media (min-width: 1024px) {
+      width: 440px;
+      height: 440px;
+    }
+  }
+  &__img {
+    &--grow-together {
+      width: 236px;
+      // desktop
+      @media (min-width: 1024px) {
+        width: 406px;
+      }
+    }
+    &--flowing-conversations {
+      width: 243px;
+      // desktop
+      @media (min-width: 1024px) {
+        width: 418px;
+      }
+    }
+    &--your-users {
+      width: 244px;
+      // desktop
+      @media (min-width: 1024px) {
+        width: 420px;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &--grow-together {
+      // desktop xl
+      @media (min-width: 1440px) {
+        width: 488px;
+      }
+    }
+    &--flowing-conversations {
+      // desktop xl
+      @media (min-width: 1440px) {
+        width: 499px;
+      }
+    }
+    &--your-users {
+      padding: 0 5px 0 3px;
+      // desktop xl
+      @media (min-width: 1440px) {
+        width: 477px;
+      }
+    }
+  }
+}
